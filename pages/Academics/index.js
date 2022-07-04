@@ -12,7 +12,7 @@ import { Card } from "./card";
 
 
 /** Academics tab */
-function index() {
+function Index() {
  const { replace} = useRouter();
  const [ theme, setTheme] = useState(initial);
  const { dispatch } = useContext(Context)
@@ -55,4 +55,4 @@ useEffect(()=> {
   )
 }
 
-export default index;
+export default Index;

@@ -35,7 +35,7 @@ export default function AccountMenu() {
 // Cleanup the event listener
       document.removeEventListener("mousedown", checkIfClickedOutside)
     }
-  }, [])
+  }, [dispatch])
 
   const navigate = (route) => {
     replace(route);

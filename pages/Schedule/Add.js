@@ -69,15 +69,15 @@ const complete = () => {
 }
   return (
      <div  className={styles.add_item} suppressHydrationWarning={true}>
-         <div className={styles.close} onClick={complete}> <sub>Add</sub> <FontAwesomeIcon icon={faCheckCircle}/></div>
+         <div className={styles.close} onClick={complete}> <sub>Add</sub> <FontAwesomeIcon icon={faCheckCircle} style={{width:'10px'}}/></div>
          <div className={styles.item_data}>
              <div className={styles.day_input}>
                 <div className={styles.day}  onClick={() => setDay(!day)}>
                   <div> { !values?.Day && "Day : eg. "}  {values?.Day === "" ? 
                      <span style={{color:"green"}}>Sunday</span> : values?.Day}
                   </div>
-                  { day &&  <FontAwesomeIcon icon={faCaretUp}/>}
-                  { !day && <FontAwesomeIcon icon={faCaretDown}/>}
+                  { day &&  <FontAwesomeIcon icon={faCaretUp}   style={{width:'10px'}} />}
+                  { !day && <FontAwesomeIcon icon={faCaretDown} style={{width:'10px'}}/>}
               </div>
               { day &&
                 <div className={styles.day_list}>
@@ -104,7 +104,6 @@ const complete = () => {
              </div>
 
               <input
-                autocomplete="off"
                 value={values?.Time}
                 className={styles.time_input} type="text"
                 name="Time" onChange={changeHandler}
@@ -115,7 +114,6 @@ const complete = () => {
               <textarea
                     minRows={1}
                     name="Activity"
-                    autocomplete="off"
                     onChange={changeHandler}
                     value={values?.Activity}
                     className={styles.activity_input}

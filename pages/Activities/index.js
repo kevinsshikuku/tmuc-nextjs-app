@@ -75,7 +75,7 @@ let skeleton = Array.from(Array(10).keys())
         { (data?.error || error || data.length === 0) && 
            skeleton.map((i) => (
             <div style={{margin:'20px'}}>
-               <Error/>
+               <Error key={i}/>
             </div>
            ))
           }

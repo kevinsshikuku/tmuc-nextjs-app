@@ -21,7 +21,7 @@ const  Index = () => {
       <div className={styles.timetable_wrapper} style={{backgroundColor:theme.farground, color: theme.primary}} suppressHydrationWarning={true}>
         { !close &&
           <div  className={styles.open} style={{color: theme.link}} onClick={() => setClose(!close)}>
-            <sub>Add</sub> { <FontAwesomeIcon icon={faAdd}/>}
+            <sub>Add</sub> { <FontAwesomeIcon icon={faAdd} style={{width:'10px'}}/>}
           </div>
         }
 

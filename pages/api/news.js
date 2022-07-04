@@ -1,6 +1,6 @@
  const cheerio = require('cheerio') // 1
 
-export default async (req, res) => { // 2
+ export default  news = async (req, res) => { // 2
 
     try { // 4
       const response = await fetch(`https://tmuc.ac.ke/`)
