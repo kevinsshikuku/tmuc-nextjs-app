@@ -1,0 +1,32 @@
+
+
+.news{
+    margin-top: 4rem;
+}
+
+.news_item{
+    padding: 1.5rem 1rem;
+    font-family: sans-serif;
+    border: none;
+    font-weight: bolder;
+    border-bottom: 2px solid gray;
+    border-bottom-style: dotted;
+}
+
+
+.image{
+    width: 100%;
+    z-index: 0;
+    margin-bottom: 1rem;
+    position: "relative";
+    border-radius: 5px;
+}
+
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-weight: bolder;
+}
+
