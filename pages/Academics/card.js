@@ -6,7 +6,7 @@ import { Colors,initial } from '../../components/theme_color';
 
 
 /** Photos from google maps */
-export function Card({name, icon, href}) {
+export default function Card({name, icon, href}) {
   const [ theme, setTheme] = useState(initial);
   const { dispatch} =  useContext(Context)
 

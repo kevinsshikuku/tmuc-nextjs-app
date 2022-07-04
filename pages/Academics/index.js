@@ -6,8 +6,8 @@ import { useSwipeable } from 'react-swipeable';
 import { useRouter } from 'next/router';
 
 import {Colors, initial} from '../../components/theme_color';
-import { data } from "./data";
-import { Card } from "./card";
+import { data } from "../../components/data";
+import Card from "./card";
 
 
 
